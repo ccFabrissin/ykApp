@@ -17,7 +17,7 @@ function Btc(){
     };
 
     return(
-        <div>
+        <div className="slide">
             Bitcoin: {currency(valorBtc)}
         </div>
     )

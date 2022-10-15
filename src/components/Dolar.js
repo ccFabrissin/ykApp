@@ -17,7 +17,7 @@ function Dolar(){
     };
 
     return(
-        <div>
+        <div className="slide">
             Dolar Blue: {currency(valorBlue)}
         </div>
     )

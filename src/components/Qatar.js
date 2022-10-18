@@ -10,10 +10,10 @@ function Qatar(){
         let diasQatar = dateQ - date0;
         let totalDays = Math.ceil(diasQatar / (1000 * 3600 * 24))
         setQatarState(totalDays);
-    })
+    }, [])
 
     return(
-        <div>
+        <div className="slide">
             Días a Qatar: {qatarState}
         </div>
         

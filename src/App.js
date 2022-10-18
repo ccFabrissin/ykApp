@@ -7,11 +7,20 @@ import Qatar from "./components/Qatar"
 
 function App() {
   return (
-    <div>
-      <Reloj />
-      <Btc />
-      <Dolar />
-      <Qatar />
+    <div className='elDocumento'>
+      <div className='contenedorReloj'>
+        <Reloj />
+      </div>
+      <div className='slider'>
+        <div className='slide-track'>  
+          <Btc />
+          <Dolar />
+          <Qatar />
+          <Btc />
+          <Dolar />
+          <Qatar />
+        </div>
+      </div>
     </div>
   );
 }

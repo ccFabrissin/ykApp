@@ -1,8 +1,41 @@
-body{
-    background-color: #1E1A1D;
-    color: #ACE4AA;
+.elDocumento{
+    display: flex;
+    flex-direction: column;
 }
 
-body > div{
-    display: flex;
+.contenedorReloj{
+    align-self: center;
+    font-size: 600%;
+
 }
+
+.slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track{
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 6);
+}
+
+.slider .slide{
+    width: 200px;
+}
+
+
+@keyframes scroll{
+    0%{
+        transform: translatex(46%);
+        -webkit-transform: translatex(46%);
+    }
+    100%{
+        transform: translatex(calc(-200px *3));
+        -webkit-transform: translate(calc(-200px *3));
+    }
+}
+>>>>>>> f5d44275213aa9a9c033da9601cf986179a07e88
